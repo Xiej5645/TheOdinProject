@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>Simple Sign-up Form</title>
+  <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+  <!-- 
+  Used cdnfonts alternative to downloading the font locally 
+  https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf 
+   -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="image-container">
+        <img id="background-image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962" atl="side-plant-image"></img>
+        <div class="overlay">
+            <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin-logo"></img>
+            <span>Odin</span>
+        </div>
+        <div id="image-caption">
+          <span>Photo by
+          <a href="https://unsplash.com/@haliewestphoto" target="_blank" rel="noopener noreferrer">Halie West</a>
+          on
+          <a href="https://unsplash.com/photos/a-snowboarder-is-going-down-a-snowy-hill-kafPw9LGHMY" target="_blank" rel="noopener noreferrer">Unsplash</a>
+          </span>
+        </div>
+    </div>
+
+    <div class="text-container">
+      <p>This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams. 
+        <br/> Sign up
+        <em>now</em> to get started.
+        <br/>
+        <br/>
+        You <em>know</em> you want to.
+      </p>
+        <form action="https://httpbin.org/post" method="post">
+          <h2>Let's do this!</h2>
+          <div class="group">            
+            <label for="first-name">FIRST NAME</label>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="first-name" id="first-name"
+              placeholder="Enter first name" value="Thor" required>
+            <input type="text" name="last-name" id="last-name"
+              placeholder="Enter last name" autofocus>
+            <label for="email">EMAIL</label>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="email" name="email" id="email"
+              placeholder="Enter email">
+            <input type="tel" name="phone-number" id="phone-number"
+              placeholder="Enter phone number">
+            <label for="psw">PASSWORD</label>
+            <label for="psw-confirm">CONFIRM PASSWORD</label>
+            <input type="password" name="psw" id="psw"
+              placeholder="Enter password" required>
+            <input type="password" name="psw-confirm" id="psw-confirm"
+              placeholder="Re-enter password" required>
+          </div>
+        </form>
+        <div class="btn-container">
+          <button type="submit" id="create-account-btn">Create account</button>
+          <p id="login-text">Already have an account?
+            <span>
+              <a href="https://www.theodinproject.com/users/sign_in" id="login-link">Log in</a>
+            </span>
+          </p>
+      </div>
+    </div>
+
+</body>
+</html>
